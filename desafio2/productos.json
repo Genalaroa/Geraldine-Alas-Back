@@ -12,12 +12,6 @@
     "id": 2
   },
   {
-    "nombre": "World of Warcraft",
-    "precio": 90,
-    "thumbail": "./img/wow.jpg",
-    "id": 3
-  },
-  {
     "nombre": "League of Legends",
     "precio": 40,
     "thumbail": "./img/lol.jpg",

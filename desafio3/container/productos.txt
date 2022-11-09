@@ -1,0 +1,26 @@
+[
+  {
+    "nombre": "Call of Dutty Modern Warfare 2",
+    "precio": 70,
+    "thumbail": "./img/callof.jpg",
+    "id": 1
+  },
+  {
+    "nombre": "Madison",
+    "precio": 65,
+    "thumbail": "./img/Madison.jpg",
+    "id": 2
+  },
+  {
+    "nombre": "World of Warcraft",
+    "precio": 90,
+    "thumbail": "./img/wow.jpg",
+    "id": 3
+  },
+  {
+    "nombre": "League of Legends",
+    "precio": 40,
+    "thumbail": "./img/lol.jpg",
+    "id": 4
+  }
+]

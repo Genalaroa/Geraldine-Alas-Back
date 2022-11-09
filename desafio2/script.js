@@ -51,15 +51,11 @@ class contenedor{
   
     async deleteById(id){
       try {
-        const juegos = await this.getAll();
-        const juego= juegos.find((juego)=> juego.id===id);
-          if (juego) {
-            const index = juegos.indexOf(juego);
-            juegos.splice(index,1);
-            await fs.writeFile(
-              path.resolve(this.path),
-              JSON.stringify(juegos, null, 2)
-            )}
+        const leer = await fs.readFile(this.path, "utf-8");
+        const data= JSON.parse(leer);
+        const newData = data.filter(obj=>obj.id !==id);
+        await fs.writeFile(this.path, JSON.stringify(newData, null, 2), 'utf-8');
+        return newData;
       } catch (error) {
         console.log(error);
       }  
